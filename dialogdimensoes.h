@@ -1,20 +1,20 @@
-#ifndef DIALOGDIMENSOES_H
-#define DIALOGDIMENSOES_H
+#ifndef DIMENSOESDIALOG_H
+#define DIMENSOESDIALOG_H
 
 #include <QDialog>
 #include <QSpinBox>
 
 namespace Ui {
-class DialogDimensoes;
+class DimensoesDialog;
 }
 
-class DialogDimensoes : public QDialog
+class DimensoesDialog : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit DialogDimensoes(QWidget *parent = nullptr);
-    ~DialogDimensoes();
+    explicit DimensoesDialog(QWidget *parent = nullptr);
+    ~DimensoesDialog();
     int leDimX();
     int leDimY();
     int leDimZ();
@@ -22,8 +22,8 @@ public:
 private slots:
 
 private:
-    Ui::DialogDimensoes *ui;
+    Ui::DimensoesDialog *ui;
 
 };
 
-#endif // DIALOGDIMENSOES_H
+#endif // DIMENSOESDIALOG_H
